@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header>
+        {% block header %}
+            <h1>{{ heading }}</h1>
+        {% endblock %}
+    </header>
+    <nav>
+        {% block navigation %}
+        <ul>
+            <li><a href="/platform">Главная</a></li>
+            <li><a href="/platform/products/">Товары</a></li>
+            <li><a href="/platform/cart/">Корзина</a></li>
+            <li><a href="/platform/registration/">Регистрация</a></li>
+        </ul>
+        {% endblock %}
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
