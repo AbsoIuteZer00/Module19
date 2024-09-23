@@ -24,5 +24,6 @@ urlpatterns = [
     path('platform/products/', products),
     path('platform/cart/', cart),
     path('platform/registration/', sign_up_by_django),
+    path('platform/post_list/', post_list),
 ]
 
